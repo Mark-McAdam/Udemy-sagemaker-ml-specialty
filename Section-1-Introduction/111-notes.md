@@ -1,3 +1,6 @@
+Section 1-8 
+good section for making just a prediction IAM role for predictions 
+
 Mostly just an introduction to the course. Looking forward to more exposure to all the resources within AWS for training and deploying machine learning models. 
 
 About the specialty certification exam
