@@ -68,11 +68,12 @@ There we used the group_class to do a transform lambda apply
 
 
 
-
-
-
-
 ---
 ### Data Visualization - Linear, Log, Quadratic and More
 
-
+There were good notes on the different types of relationships that X and Y can show. 
+- Linear
+- Logarithmic
+- Exponential 
+- Absolute Value 
+- Sine Wave 
