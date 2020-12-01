@@ -78,3 +78,22 @@ Plots are a good human readable way to guage the effectiveness but for tuning mo
 
 
 
+### Confusion Matrix
+Confusion Matrix is a table that summarizes performance of classification model.
+
+_____
+from sklearn.metrics import classification_report, confusion_matrix
+
+
+It summarizes predictions into four categories:
+True Positive = tp = how many samples were correctly classified as positive (count)
+True Negative = tn = how many samples were correctly classified as negative (count)
+False Positive = fp = how many negative samples were mis-classified as positive (count)
+False Negative = fn = how many positive samples were mis-classified as negative (count)
+
+Using these four metrics, we can derive other useful metrics like Recall, Precision, Accuracy, F1-Score and so forth.
+
+
+
+
+
