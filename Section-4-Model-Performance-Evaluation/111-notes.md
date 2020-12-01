@@ -144,6 +144,13 @@ macro average is not a good indicator when there are skewed class distributions.
 
 ## Quiz 
 
+#### Question 1:
+The Test RMSE scores for various models for predicting home prices are given below.  The median home price is USD 200,000.  Which model would you use?
+
+Models with smaller RMSE value indicates better predictive quality.
+
+
+
 #### Question 2:
 In an email classifier, spam is considered positive, and normal email is negative. Model performance with test set is: TP=10, FN=5, TN=100, FP=20
 
