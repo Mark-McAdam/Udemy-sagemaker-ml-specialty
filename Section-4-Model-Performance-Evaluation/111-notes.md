@@ -97,3 +97,46 @@ Using these four metrics, we can derive other useful metrics like Recall, Precis
 
 
 
+# ROC Curve 
+AUC - Area under curve is formed by plotting True Positive Rate against the false positive rate at different cutoff threshholds 
+
+-----
+from sklearn.metrics import roc_auc_score
+
+
+
+Good models have AUC closer to 1
+
+0.5 is considered random guess 
+
+auc close to 0 indicates model is picking wrong results - flipping negative adn positive
+
+
+
+# Multiclass classifier prediction
+
+Similar to evaluating the performance of a binary classification, with a multi-class classification problem instead of a positive versus negative its a positive versus any other result is a negative for each of the classes 
+
+- positive negative negative negative, then 
+- negative positive negative negative, then 
+- negative negative positive negative, then 
+- negative negative negative positive, then done 
+
+examples in multiclass classifier performance notebook
+
+# F-1 
+- the harmonic mean of precision and recall
+
+
+Best description I have heard yet on the way to describe this. 
+
+
+
+Regarding the Micro vs Macro average. 
+
+-----
+SciKitLearn classification report
+micro vs macro average - good for determining a weight when imbalanced dataset are encountered. It provides a weighted average that takes imbalance in the distribution of classes in the dataset. 
+
+
+macro average is not a good indicator when there are skewed class distributions. If 99% iof the data is not fraud, .5% is not, and .5% us unknown - macro would still treat all classes as equal 
