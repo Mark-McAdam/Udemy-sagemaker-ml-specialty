@@ -140,3 +140,84 @@ micro vs macro average - good for determining a weight when imbalanced dataset a
 
 
 macro average is not a good indicator when there are skewed class distributions. If 99% iof the data is not fraud, .5% is not, and .5% us unknown - macro would still treat all classes as equal 
+
+
+## Quiz 
+
+#### Question 2:
+In an email classifier, spam is considered positive, and normal email is negative. Model performance with test set is: TP=10, FN=5, TN=100, FP=20
+
+How many spams are there in the test data set?
+- 15 
+
+Positive samples = TP + FN. You can find the spams in the test set by summing true positive and false negative. True positives are spams that were correctly classified. False-negative are spams that were misclassified as normal email.
+
+
+
+#### Question 3:
+In an email classifier, spam is considered positive, and normal email is negative.  Model performance with test set is: TP=10, FN=5, TN=100, FP=20
+
+What is the recall for this model?
+- 0.667 or .7 in the question
+
+
+[For formula, refer to the Model Performance Evaluation.pdf in the downloadable resources of this section]
+
+Recall or sensitivity
+Recall = TP/(TP+FN). The recall is the probability of detecting spam. It does not consider misclassification of normal email as spam.
+
+
+
+#### Question 4:
+In an email classifier, spam is considered positive, and normal email is negative.  Model performance with test set is: TP=10, FN=5, TN=100, FP=20
+
+What is the precision for this model?
+- 0.3333 or .3 in the question 
+
+[For formula, refer to the Model Performance Evaluation.pdf in the downloadable resources of this section]
+
+Precision = TP/(TP+FP). With Precision, you can measure how many of the model predicted spams are really spams. Precision considers normal emails misclassified as spam.
+
+
+#### Question 5:
+In an email classifier, spam is considered positive, and normal email is negative.  Model performance with test set is TP=15, FN=0, TN=0, FP=120
+
+What is the Recall for this model?
+- 1.0 
+
+[For formula, refer to the Model Performance Evaluation.pdf in the downloadable resources of this section]
+
+In this example, the model is classifying all emails as spam. So, this model classified spam correctly but also misclassified all normal emails as spam. Recall = TP/(TP+FN). The recall does not consider misclassification of normal email as spam. If the recall is high, you should also look at precision and F1-score.
+
+
+
+#### Question 6:
+In an email classifier, spam is considered positive, and normal email is negative.  Model performance with test set is TP=15, FN=0, TN=0, FP=120
+
+What is the F1-score for this model?
+- 0.2 
+
+In this example, the model is classifying all emails as spam. So, this model classified spam correctly but misclassified all normal emails as spam. It is a good idea to check both Recall and Precision Or use the F1-score. F1 Score = 2 * recall * precision/(recall + precision)
+
+
+
+#### Question 7:
+In an email classifier, spam is considered positive, and normal email is negative.  Model performance with test set is TP=1, FN=14, TN=120, FP=0
+
+What is the Precision for this model?
+- 1.0 
+
+[For formula, refer to the Model Performance Evaluation.pdf in the downloadable resources of this section]
+
+In this example, the model is classifying almost all emails as normal. It detected only one spam correctly, and all other emails were classified as normal. Precision is high because it did not misclassify any normal email as spam. Precision = TP/(TP+FP). When precision is very high, you should also look at the recall or F1-score.
+
+#### Question 8:
+In an email classifier, spam is considered positive, and normal email is negative.  Model performance with test set is TP=1, FN=14, TN=120, FP=0
+
+What is the F1-score for this model?
+- .125 or 0.1 as the closer option given 
+
+[For formula, refer to the Model Performance Evaluation.pdf in the downloadable resources of this section]
+
+
+
