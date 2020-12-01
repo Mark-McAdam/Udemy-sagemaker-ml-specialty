@@ -84,6 +84,9 @@ Confusion Matrix is a table that summarizes performance of classification model.
 _____
 from sklearn.metrics import classification_report, confusion_matrix
 
+or for help calculating it 
+https://onlineconfusionmatrix.com/
+
 
 It summarizes predictions into four categories:
 True Positive = tp = how many samples were correctly classified as positive (count)
